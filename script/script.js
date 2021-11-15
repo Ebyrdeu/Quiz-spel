@@ -46,27 +46,17 @@ const classDB = [
     },
 ];
 
-// Array of fake names
-const fakeName = [
-    "Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank",
-    "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger",
-    "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"
-]
+
 
 // Attach Classmate NAME into Buttons
 const personName = () => {
     // Generate random index number of array
-    const randomFakeName = () => Math.floor(Math.random() * classDB.length),
+    const   randomFakePerson = () => Math.floor(Math.random() * classDB.length),
         index = Math.floor(Math.random() * btn.length);
-    
-    /* !NOTE// Only depend on classmates names
-    randomFakePerson = () => Math.floor(Math.random() * classDB.length)
+
+    // attach  name
     for (let i = 0; i < btn.length; i++) btn[i].textContent = classDB[randomFakePerson()].name;
-    */
-
-    // attach fake name
-    for (let i = 0; i < btn.length; i++) btn[i].textContent = fakeName[randomFakeName()];
-
+    gi
     // rewrite one random button
     btn[index].textContent = classDB[randomCorrectName].name;
 
