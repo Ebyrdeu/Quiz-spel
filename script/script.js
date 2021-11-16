@@ -9,64 +9,173 @@ let correct = 0,
 
 const classDB = [
     {
-        name: "Zenos",
-        src: "https://metromode.se/files/2017/09/framgang8151.jpg"
+        "name" : "Adi Dzocaj",
+        "photo": "assets/images/students/adi-dzocaj.jpg",
     },
     {
-        name: "Y'shtola",
-        src: "https://svd.vgc.no/v2/images/7ad7300b-6f61-4c01-847e-7e60db8d39a0?h=630&q=80&upscale=true&w=1200&s=4da31994ab8d57888fe6085faf4171e2569affa7"
+        "name" : "Alexander Bergquist",
+        "photo": "assets/images/students/alexander-bergquist.jpg",
     },
     {
-        name: "Tia",
-        src: "https://www.healthshots.com/wp-content/uploads/2020/11/toxic-person-quiz.jpg"
+        "name" : "Alexander Kocman",
+        "photo": "assets/images/students/alexander-kocman.jpg",
     },
     {
-        name: "Erk",
-        src: "https://www.thenews.com.pk/assets/uploads/updates/2021-01-13/773676_9402039_294840_094028_updates_updates.jpg"
+        "name" : "Benjamin Benson",
+        "photo": "assets/images/students/benjamin-benson.jpg",
     },
     {
-        name: "Chad",
-        src: "https://www.wehale.life/globalassets/common-files/public-health/2019-10-how-to-support-someone-with-copd/wehale-copd-1440x777.jpg"
+        "name" : "Benjamin Tsubarah",
+        "photo": "assets/images/students/benjamin-tsubarah.jpg",
     },
     {
-        name: "Jesus",
-        src: "https://nmaahc.si.edu/sites/default/files/styles/featured_image_16x9/public/images/header/audience-citizen_0.jpg?itok=yoGQec7Q"
+        "name" : "Calle Nilsson",
+        "photo": "assets/images/students/calle-nilsson.jpg",
     },
     {
-        name: "Lyse",
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4zGSr25cTfr__JnNBlxju18g9geM7uir_g&usqp=CAU"
+        "name" : "Chikage Takahashi Molander",
+        "photo": "assets/images/students/chikage-takahashi-molander.jpg",
     },
     {
-        name: "Alise",
-        src: "https://miro.medium.com/max/11520/0*yNQ3UdtoAXyB8Whx"
+        "name" : "Daniel Be",
+        "photo": "assets/images/students/daniel-be.jpg",
     },
     {
-        name: "Chad",
-        src: "https://lingopolo.org/thai/sites/lingopolo.org.thai/files/styles/entry/public/images/2016/08/29/person-1911.jpg"
+        "name" : "Daniel Carlsson",
+        "photo": "assets/images/students/daniel-carlsson.jpg",
+    },
+    {
+        "name" : "Elin Ahlgren",
+        "photo": "assets/images/students/elin-ahlgren.jpg",
+    },
+    {
+        "name" : "Emma Käck",
+        "photo": "assets/images/students/emma-kack.jpg",
+    },
+    {
+        "name" : "Eric Ståhl",
+        "photo": "assets/images/students/eric-stahl.jpg",
+    },
+    {
+        "name" : "Frans Gustavson Påsse",
+        "photo": "assets/images/students/frans-gustavson-passe.jpg",
+    },
+    {
+        "name" : "Glafira Veretennikova",
+        "photo": "assets/images/students/glafira-veretennikova.jpg",
+    },
+    {
+        "name" : "Gustaf Grönlund",
+        "photo": "assets/images/students/gustaf-gronlund.jpg",
+    },
+    {
+        "name" : "Hanna Håkanson",
+        "photo": "assets/images/students/hanna-hakanson.jpg",
+    },
+    {
+        "name" : "Heidi Sjöberg",
+        "photo": "assets/images/students/heidi-sjoberg.jpg",
+    },
+    {
+        "name" : "Hugo Carzborn",
+        "photo": "assets/images/students/hugo-carzborn.jpg",
+    },
+    {
+        "name" : "Jesper Kling",
+        "photo": "assets/images/students/jesper-kling.jpg",
+    },
+    {
+        "name" : "Johan Ranestam",
+        "photo": "assets/images/students/johan-ranestam.jpg",
+    },
+    {
+        "name" : "Johanna Bäckström",
+        "photo": "assets/images/students/johanna-backstrom.jpg",
+    },
+    {
+        "name" : "Johanna Jönsson",
+        "photo": "assets/images/students/johanna-jonsson.jpg",
+    },
+    {
+        "name" : "Jona Torsson",
+        "photo": "assets/images/students/jona-torsson.jpg",
+    },
+    {
+        "name" : "Josefine Ahlstedt",
+        "photo": "assets/images/students/josefine-ahlstedt.jpg",
+    },
+    {
+        "name" : "Julia Jespersdotter Högman",
+        "photo": "assets/images/students/julia-jespersdotter-hogman.jpg",
+    },
+    {
+        "name" : "Julia Nemell",
+        "photo": "assets/images/students/julia-nemell.jpg",
+    },
+    {
+        "name" : "Linus Lindberg",
+        "photo": "assets/images/students/linus-lindberg.jpg",
+    },
+    {
+        "name" : "Malin Olsson",
+        "photo": "assets/images/students/malin-olsson.jpg",
+    },
+    {
+        "name" : "Maria Haara-Lundhammar",
+        "photo": "assets/images/students/maria-haara-lundhammar.jpg",
+    },
+    {
+        "name" : "Maria Lövgren",
+        "photo": "assets/images/students/maria-lovgren.jpg",
+    },
+    {
+        "name" : "Nikola Dimitrijoski",
+        "photo": "assets/images/students/nikola-dimitrijoski.jpg",
+    },
+    {
+        "name" : "Paulina Kiendys",
+        "photo": "assets/images/students/paulina-kiendys.jpg",
+    },
+    {
+        "name" : "Raymond Lam",
+        "photo": "assets/images/students/raymond-lam.jpg",
+    },
+    {
+        "name" : "Robin Karlsson",
+        "photo": "assets/images/students/robin-karlsson.jpg",
+    },
+    {
+        "name" : "Sara Almqvist",
+        "photo": "assets/images/students/sara-almqvist.jpg",
+    },
+    {
+        "name" : "Tim Nilsson",
+        "photo": "assets/images/students/tim-nilsson.jpg",
+    },
+    {
+        "name" : "Tirapat Sukjit",
+        "photo": "assets/images/students/tirapat-sukjit.jpg",
+    },
+    {
+        "name" : "Tobias Silfverberg",
+        "photo": "assets/images/students/tobias-silfverberg.jpg",
+    },
+    {
+        "name" : "Wiktoria Dobrzewinska",
+        "photo": "assets/images/students/wiktoria-dobrzewinska.jpg",
     },
 ];
 
-// Array of fake names
-const fakeName = [
-    "Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank",
-    "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger",
-    "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"
-]
+
 
 // Attach Classmate NAME into Buttons
 const personName = () => {
     // Generate random index number of array
-    const randomFakeName = () => Math.floor(Math.random() * classDB.length),
+    const   randomFakePerson = () => Math.floor(Math.random() * classDB.length),
         index = Math.floor(Math.random() * btn.length);
-    
-    /* !NOTE// Only depend on classmates names
-    randomFakePerson = () => Math.floor(Math.random() * classDB.length)
+
+    // attach  name
     for (let i = 0; i < btn.length; i++) btn[i].textContent = classDB[randomFakePerson()].name;
-    */
-
-    // attach fake name
-    for (let i = 0; i < btn.length; i++) btn[i].textContent = fakeName[randomFakeName()];
-
     // rewrite one random button
     btn[index].textContent = classDB[randomCorrectName].name;
 
@@ -80,7 +189,7 @@ const render = () => {
 
     header.innerHTML = `<p class="text-success fs-3 fw-bold text-center">Correct: ${correct}/${all} </p>`;
 
-    gameBox.innerHTML = `<section class=""> <img src="${classDB[randomCorrectName].src}" class="rounded img-fluid  w-25 mb-5 " alt="cheater"></section>`;
+    gameBox.innerHTML = `<section class=""> <img src="${classDB[randomCorrectName].photo}" class="rounded img-fluid  w-25 mb-5 " alt="cheater"></section>`;
 
     personName();
 };
