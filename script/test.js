@@ -21,7 +21,7 @@ const classDB = [
         "photo": "assets/images/students/benjamin-tsubarah.jpg",
     },
 
-    /*  {
+ /*     {
           "name": "Calle Nilsson",
           "photo": "assets/images/students/calle-nilsson.jpg",
       },
@@ -180,12 +180,16 @@ const attachNamesToButtons = () => {
 
     // NOTE FILTER IF FAKE NAME = CORECT NAME
     const filter = classmatesName.filter(arr => !copy[random].includes(arr));
-
-    const btnIndex = Math.floor(Math.random() * btn.length)
+    
+    // NOTE RANDOM FILTERED ARR
+    const r = filter.sort(() => 0.5 - Math.random());
+    
+    // NOTE RANDOM BTN INDEX
+    const btnIndex = Math.floor(Math.random() * btn.length);
 
     // NOTE RENDER 3 BUTTONS TEXT WITH Fake ANSWERS
     btn.forEach((e, i) => {
-        e.textContent = filter[i]
+        e.textContent = r[i];
     })
 
     // NOTE RENDER ALL BUTTONS TEXT WITH RIGHT ANSWER
