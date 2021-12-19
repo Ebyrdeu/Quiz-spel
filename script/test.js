@@ -206,7 +206,7 @@ const render = () => {
     document.querySelector('[data-score]').innerHTML = `Score ${score}/${questionNumber}`;
 
     // NOTE RENDER IMG
-    document.querySelector('.img-0').innerHTML = `<img class="rounded-3 img-thumbnail img-fluid d-block mx-auto w-25 mb-5" src="${classmatesPhoto[random]}" alt="${classmatesName[random]}">`;
+    document.querySelector('.img-0').innerHTML = `<img class="rounded-3 img-thumbnail img-fluid d-block mx-auto w-50 mb-5" src="${classmatesPhoto[random]}" alt="${classmatesName[random]}">`;
 
     // NOTE FAKE NAME FUNCTION
     attachNamesToButtons()

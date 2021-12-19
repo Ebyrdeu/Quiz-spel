@@ -3,3 +3,20 @@ body{
     color: #ECEFF4;
     position: relative;
 }
+.btn-guess {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.new-game {
+    width: 100%;
+}
+.btn-guess:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .box {
+        flex-direction: column;
+    }
+}
