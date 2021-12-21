@@ -14,7 +14,9 @@ body{
 .btn-guess:last-child {
     margin-right: 0;
 }
-
+.hide {
+    display: none;
+}
 @media only screen and (max-width: 992px) {
     .box {
         flex-direction: column;
