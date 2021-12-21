@@ -116,5 +116,8 @@ btn.forEach(e => {
 })
 
 // NOTE New Game 
-document.querySelector('[data-new-game]').addEventListener('click', location.reload);
+document.querySelector('[data-new-game]').addEventListener('click', () => {
+
+    location.reload();
+});
 
