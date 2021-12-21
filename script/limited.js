@@ -50,13 +50,13 @@ const attachNamesToButtons = () => {
     const randomFilter = filter.sort(() => 0.5 - Math.random());
 
     // NOTE RANDOM BTN INDEX
-    const btnIndex = Math.floor(Math.random() * btn.length);
+    const btnIndex = () => Math.floor(Math.random() * btn.length);
 
     // NOTE RENDER 3 BUTTONS TEXT WITH Fake ANSWERS
     btn.forEach((e, i) => e.textContent = randomFilter[i])
 
     // NOTE RENDER ALL BUTTONS TEXT WITH RIGHT ANSWER
-    btn[btnIndex].textContent = copyName[random];
+    btn[btnIndex()].textContent = classDB[random].name;
 
 
 
@@ -92,7 +92,6 @@ const win = () => {
     } else {
         btn.forEach(e => e.classList.add('hide'));
         document.querySelector('.img-0').classList.add('hide');
-        document.querySelector('[data-input]').classList.add('hide');
         document.querySelector('[data-new-game]').classList.remove('hide');
     }
     score++;
@@ -117,14 +116,5 @@ btn.forEach(e => {
 })
 
 // NOTE New Game 
-document.querySelector('[data-new-game]').addEventListener('click', () => {
-    score = 0;
-    questionNumber = 0;
-    render();
-    
-    btn.forEach(e => e.classList.remove('hide'));
-    document.querySelector('.img-0').classList.remove('hide');
-    document.querySelector('[data-input]').classList.remove('hide');
-    document.querySelector('[data-new-game]').classList.add('hide');
-});
+document.querySelector('[data-new-game]').addEventListener('click', location.reload);
 
