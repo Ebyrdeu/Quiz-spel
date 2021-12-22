@@ -44,7 +44,7 @@ const attachNamesToButtons = () => {
 
 
     // NOTE FILTER IF FAKE NAME = CORRECT NAME
-    const filter = copyName.filter(arr => !copyName[random].includes(arr));
+    const filter = copyName.filter(arr => !classDB[random].name.includes(arr));
 
     // NOTE RANDOM FILTERED ARR
     const randomFilter = filter.sort(() => 0.5 - Math.random());
@@ -56,7 +56,7 @@ const attachNamesToButtons = () => {
     btn.forEach((e, i) => e.textContent = randomFilter[i])
 
     // NOTE RENDER ALL BUTTONS TEXT WITH RIGHT ANSWER
-    btn[btnIndex()].textContent = classDB[random].name;
+    btn[btnIndex()].textContent = classDB[random].name
 
 
 
